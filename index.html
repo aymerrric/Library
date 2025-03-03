@@ -5,8 +5,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
     </head>
     <body>
-        
+        <dialog>
+            <form>
+                <div class="title-form">
+                    <label for="text">Title: </label><input type="text" id="title" name="title" placeholder="Title" autofocus required>
+                </div>
+                    <div class="price-form">
+                        <label for="price">Price: </label><input type="number" min="1" max="100" id="price" name="price" placeholder="15" required>
+                    </div>
+                <div class="number-of-pages-form">
+                    <label for="number-of-pages">Number of Pages: </label><input type="number" min="20" step="1" id="number-of-pages" name="numberOfPages" placeholder="200" required>
+                </div>
+                    <div class="read-form">
+                        <label for="read"></label>Read: <input type="checkbox" id="read" name="read">
+                    </div>
+                <button id="close">Cancel</button><button id="send">Send</button>
+            </form>
+        </dialog>
+        <header>    
+            <h1> My Personal Library </h1>
+        </header>
+        <div class="shelf">
+            <div class="book-card" id="add-container">
+                <button id="add-button"><img src="images/plus-large-svgrepo-com.svg" alt="+"></button>
+            </div>
+        </div>
     </body>
 </html>
